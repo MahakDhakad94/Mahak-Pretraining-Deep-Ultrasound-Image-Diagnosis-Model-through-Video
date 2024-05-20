@@ -1,21 +1,8 @@
-# USCL: Pretraining Deep Ultrasound Image Diagnosis Model through Video Contrastive Representation Learning
+Pretraining Deep Ultrasound Image Diagnosis Model through Video Contrastive Representation Learning.
 
-### Accepted by MICCAI 2021 (Oral). [[Paper Link](https://arxiv.org/abs/2011.13066)]
-
-This repository includes the constructed **US-4** dataset and source codes (PyTorch version) of USCL, to appear in MICCAI 2021.
-
-### Abstract
-Most deep neural networks (DNNs) based ultrasound (US) medical image analysis models use pretrained backbones (e.g., ImageNet) for better model generalization. However, the domain gap between natural and medical images causes an inevitable performance bottleneck. To alleviate this problem, an US dataset named US-4 is constructed for direct pretraining on the same domain. It contains over 23,000 images from four US video sub-datasets. To learn robust features from US-4, we propose an US semi-supervised contrastive learning method, named USCL, for pretraining. In order to avoid high similarities between negative pairs as well as mine abundant visual features from limited US videos, USCL adopts a sample pair generation method to enrich the feature involved in a single step of contrastive optimization. Extensive experiments on several downstream tasks show the superiority of USCL pretraining against ImageNet pretraining and other state-of-the-art (SOTA) pretraining approaches. In particular, USCL pretrained backbone achieves fine-tuning accuracy of over 94% on POCUS dataset, which is 10% higher than 84% of the ImageNet pretrained model. The constructed US-4 dataset and source codes of this work will be made public.
-
-![image](https://github.com/983632847/USCL/blob/main/framework.png)
+#Abstract: Most deep neural networks (DNNs) based ultrasound (US) medical image analysis models use pretrained backbones (e.g., ImageNet) for better model generalization. However, the domain gap between natural and medical images causes an inevitable performance bottleneck. It contains over 23,000 images from four US video sub-datasets. To learn robust features from US-4, we propose an US semi-supervised contrastive learning method, named USCL, for pretraining. In order to avoid high similarities between negative pairs as well as mine abundant visual features from limited US videos, USCL adopts a sample pair generation method to enrich the feature involved in a single step of contrastive optimization. Extensive experiments on several downstream tasks show the superiority of USCL pretraining against ImageNet pretraining and other state-of-the-art (SOTA) pretraining approaches. In particular, USCL pretrained backbone achieves fine-tuning accuracy of over 94% on POCUS dataset, which is 10% higher than 84% of the ImageNet pretrained model. The constructed US-4 dataset and source codes of this work will be made public.
 
 
-### US-4 dataset
-The US-4 dataset will be available at [US-4](https://github.com/983632847/USCL).
-
-We are reorganizing data and negotiating open source methods, and we will continue to open source after these were done.
-
-![image](https://github.com/983632847/USCL/blob/main/Examples_US4.png)
 
 
 ### Quick Start
@@ -58,37 +45,5 @@ The install script has been tested on an Ubuntu 18.04 system.
 
 Licensed under an MIT license.
 
-### Citation
-
-If you find the code and dataset useful in your research, please consider citing:
-
-    @inproceedings{Chen2021MICCAI,
-        title={USCL: Pretraining Deep Ultrasound Image Diagnosis Model through Video Contrastive Representation Learning},
-        author = {Yixiong Chen, and Chunhui Zhang, and Li Liu, and Cheng Feng, and Changfeng Dong, and Yongfang Luo, and Xiang Wan},
-        journal = {MICCAI},
-        year = {2021}
-      }
-
-
-     @article{born2021accelerating,
-        title={Accelerating detection of lung pathologies with explainable ultrasound image analysis},
-        author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Br{\"a}ndle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten},
-        journal={Applied Sciences},
-        pages={672},
-        year={2021},
-        }
-
-
-     @inproceedings{Somphone2014MICCAIW,
-        author={O. Somphone, and S. Allaire, and B. Mory, and C. Dufour},
-        title={Live Feature Tracking in Ultrasound Liver Sequences with Sparse Demons},
-        booktitle = {International Conference on Medical Image Computing and Computer Assisted Intervention Workshop},
-        pages = {53-60}, 
-        year={2014},
-      }
-
-
-### Contact
-Feedbacks and comments are welcome! Feel free to contact us via [andyzhangchunhui@gmail.com](mailto:andyzhangchunhui@gmail.com) or [16307110231@fudan.edu.cn](mailto:16307110231@fudan.edu.cn) or [liuli@cuhk.edu.cn](mailto:liuli@cuhk.edu.cn).
 
 Enjoy!
